@@ -1,1 +1,4 @@
 Enter your student number and Full name here.
+
+Student Number: 4033613058
+Full Name: Ali Azizi Alavijeh
