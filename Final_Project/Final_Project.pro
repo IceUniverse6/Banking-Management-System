@@ -14,6 +14,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Account.h \
     LinkedList.h \
     Node.h \
     User.h \
