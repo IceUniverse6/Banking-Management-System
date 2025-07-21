@@ -6,25 +6,275 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1200</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="changefirstPassButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>250</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #changefirstPassButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #changefirstPassButton:hover {
+        background-color: #3498db;
+    }
+    #changefirstPassButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>تغییر رمز اول</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="transferMoneyButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>160</y>
+      <width>410</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #transferMoneyButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #transferMoneyButton:hover {
+        background-color: #3498db;
+    }
+    #transferMoneyButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>کارت به کارت</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="changeStaticSecondPassButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>340</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #changeStaticSecondPassButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #changeStaticSecondPassButton:hover {
+        background-color: #3498db;
+    }
+    #changeStaticSecondPassButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>تغییر رمز دوم ثابت</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>60</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+    }</string>
+    </property>
+    <property name="text">
+     <string>پنل مشتری</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="getBalanceButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>250</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #getBalanceButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #getBalanceButton:hover {
+        background-color: #3498db;
+    }
+    #getBalanceButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>موجودی حساب</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="changeAccountPassButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>340</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #changeAccountPassButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #changeAccountPassButton:hover {
+        background-color: #3498db;
+    }
+    #changeAccountPassButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>تغییر رمز حساب کاربری</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="viewPersonalInfoButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>160</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #viewPersonalInfoButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #viewPersonalInfoButton:hover {
+        background-color: #3498db;
+    }
+    #viewPersonalInfoButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>مشاهده اطلاعات شخصی</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signOutButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>340</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #signOutButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #signOutButton:hover {
+        background-color: #3498db;
+    }
+    #signOutButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>خروج</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="viewAccountsButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>250</y>
+      <width>200</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> #viewAccountsButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #viewAccountsButton:hover {
+        background-color: #3498db;
+    }
+    #viewAccountsButton:pressed {
+        background-color: #1c5980;
+    }</string>
+    </property>
+    <property name="text">
+     <string>مشاهده حساب ها</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
