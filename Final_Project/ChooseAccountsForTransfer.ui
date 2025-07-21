@@ -6,13 +6,268 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#ChooseAccountsForTransfer{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="toCardNumberField">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>490</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toCardNumberField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #toCardNumberField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>490</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>شماره کارت مقصد</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>550</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>مبلغ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>620</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #okButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #okButton:hover {
+        background-color: #3498db;
+    }
+    #okButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>تایید</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fromCardNumberField">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#fromCardNumberField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #fromCardNumberField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="accountTypeList">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>80</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountTypeList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #accountTypeList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #accountTypeList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>620</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #returnButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #returnButton:hover {
+        background-color: #3498db;
+    }
+    #returnButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="cardNumberList">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cardNumberList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #cardNumberList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #cardNumberList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>20</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>شماره کارت مبدا</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="amountField">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>550</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#amountField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #amountField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
