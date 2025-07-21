@@ -6,13 +6,224 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#ViewAllAccountsPage{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QListWidget" name="accountTypeList">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>100</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountTypeList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #accountTypeList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #accountTypeList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>همه حساب ها</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="accountNumberList">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountNumberList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #accountNumberList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #accountNumberList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>530</y>
+     <width>430</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>جهت مشاهده اطلاعات حساب، شماره حساب مدنظر را وارد کنید</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>620</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #returnButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #returnButton:hover {
+        background-color: #3498db;
+    }
+    #returnButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="ownerList">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#ownerList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #ownerList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #ownerList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>530</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #searchButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #searchButton:hover {
+        background-color: #3498db;
+    }
+    #searchButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>جستجو</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="accountNumberField">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>530</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountNumberField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #accountNumberField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
