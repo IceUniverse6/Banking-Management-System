@@ -6,13 +6,174 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#ChooseAccountPage{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QListWidget" name="accountTypeList">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>150</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountTypeList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #accountTypeList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #accountTypeList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>570</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #returnButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #returnButton:hover {
+        background-color: #3498db;
+    }
+    #returnButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>80</y>
+     <width>300</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>لطفا شماره حساب مدنظر را وارد کنید</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>570</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #okButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #okButton:hover {
+        background-color: #3498db;
+    }
+    #okButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>تایید</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="accountNumberField">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountNumberField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #accountNumberField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="accountNumberList">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>150</y>
+     <width>200</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountNumberList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #accountNumberList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #accountNumberList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
