@@ -12,6 +12,7 @@ SOURCES += \
     Account.cpp \
     Admin.cpp \
     Costumer.cpp \
+    CurrentAccount.cpp \
     DepositAccount.cpp \
     User.cpp \
     main.cpp \
