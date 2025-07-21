@@ -15,6 +15,7 @@ SOURCES += \
 HEADERS += \
     LinkedList.h \
     Node.h \
+    User.h \
     mainwindow.h
 
 FORMS += \
