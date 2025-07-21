@@ -14,6 +14,7 @@ SOURCES += \
     AddNewAdminPage.cpp \
     AddNewCostumerPage.cpp \
     Admin.cpp \
+    AdminPanel.cpp \
     ChangePasswordPage.cpp \
     ChooseAccountPage.cpp \
     ChooseAccountsForTransfer.cpp \
@@ -45,6 +46,7 @@ HEADERS += \
     AddNewAdminPage.h \
     AddNewCostumerPage.h \
     Admin.h \
+    AdminPanel.h \
     ChangePasswordPage.h \
     ChooseAccountPage.h \
     ChooseAccountsForTransfer.h \
@@ -75,6 +77,7 @@ FORMS += \
     AccountInfoPage.ui \
     AddNewAdminPage.ui \
     AddNewCostumerPage.ui \
+    AdminPanel.ui \
     ChangePasswordPage.ui \
     ChooseAccountPage.ui \
     ChooseAccountsForTransfer.ui \
