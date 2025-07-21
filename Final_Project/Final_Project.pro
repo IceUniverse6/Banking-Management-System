@@ -12,6 +12,7 @@ SOURCES += \
     Account.cpp \
     Admin.cpp \
     Costumer.cpp \
+    CostumersInfoPage.cpp \
     CurrentAccount.cpp \
     DepositAccount.cpp \
     DetailedAccountInfoPage.cpp \
@@ -25,6 +26,7 @@ HEADERS += \
     Account.h \
     Admin.h \
     Costumer.h \
+    CostumersInfoPage.h \
     CurrentAccount.h \
     DepositAccount.h \
     DetailedAccountInfoPage.h \
@@ -36,6 +38,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    CostumersInfoPage.ui \
     DetailedAccountInfoPage.ui \
     PersonalInfoPage.ui \
     mainwindow.ui
