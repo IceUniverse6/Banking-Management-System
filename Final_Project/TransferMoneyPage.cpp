@@ -95,16 +95,6 @@ void TransferMoneyPage::on_transferButton_clicked()
             error->exec();
             return;
         }
-
-        if(secondPass!=fromAccount->getDynamicSecondPassword()){
-            std::shared_ptr<QMessageBox> error = std::make_shared<QMessageBox>();
-            error->setText("رمز پویای وارد شده نامعتبر است! مجددا درخواست کنید");
-            error->setWindowTitle("رمز نامعتبر");
-            error->setIcon(QMessageBox::Critical);
-            error->exec();
-            fromAccount->clearDynamicSecondPassword();
-            return;
-        }
     }
 
 
