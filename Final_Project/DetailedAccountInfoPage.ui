@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailedAccountInfoPage</class>
+ <widget class="QDialog" name="DetailedAccountInfoPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#DetailedAccountInfoPage{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>280</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_9 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>شماره کارت</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>480</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #okButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #okButton:hover {
+        background-color: #3498db;
+    }
+    #okButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>تایید</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>380</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_7 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>کد cvv2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>180</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>مالک</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="balance">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#balance {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="shebaNumber">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>330</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#shebaNumber {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>330</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_8 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>شماره شبا</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="accountNumber">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>230</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#accountNumber {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>230</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>شماره حساب</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardNumber">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cardNumber {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="expirationDate">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#expirationDate {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cvv2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>380</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cvv2 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_5 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>موجودی</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_4 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>تاریخ انقضا</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>90</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>اطلاعات کامل حساب</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="owner">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#owner {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
