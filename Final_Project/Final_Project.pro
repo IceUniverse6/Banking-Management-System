@@ -19,6 +19,7 @@ SOURCES += \
     InterestFreeAccount.cpp \
     PersonalInfoPage.cpp \
     User.cpp \
+    ViewAllAccountsPage.cpp \
     ViewAllAdminsPage.cpp \
     ViewAllCostumersPage.cpp \
     main.cpp \
@@ -37,6 +38,7 @@ HEADERS += \
     Node.h \
     PersonalInfoPage.h \
     User.h \
+    ViewAllAccountsPage.h \
     ViewAllAdminsPage.h \
     ViewAllCostumersPage.h \
     mainwindow.h
@@ -45,6 +47,7 @@ FORMS += \
     CostumersInfoPage.ui \
     DetailedAccountInfoPage.ui \
     PersonalInfoPage.ui \
+    ViewAllAccountsPage.ui \
     ViewAllAdminsPage.ui \
     ViewAllCostumersPage.ui \
     mainwindow.ui
