@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     Account.cpp \
+    Admin.cpp \
     Costumer.cpp \
     User.cpp \
     main.cpp \
