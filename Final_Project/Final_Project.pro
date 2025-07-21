@@ -24,6 +24,7 @@ HEADERS += \
     Costumer.h \
     CurrentAccount.h \
     DepositAccount.h \
+    InterestFreeAccount.h \
     LinkedList.h \
     Node.h \
     User.h \
