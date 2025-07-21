@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewAllAdminsPage</class>
+ <widget class="QDialog" name="ViewAllAdminsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ViewAllAdminsPage{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>560</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #okButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #okButton:hover {
+        background-color: #3498db;
+    }
+    #okButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>تایید</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>50</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>لیست همه ادمین ها</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="adminsList">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>130</y>
+     <width>300</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#adminsList {
+	color: rgb(0, 0, 0);
+        background-color: #f8f9fa;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+        padding: 4px;
+    }
+    #adminsList::item {
+        padding: 8px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #adminsList::item:selected {
+        background-color: #d6eaf8;
+        color: #154360;
+    }</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
