@@ -15,6 +15,7 @@ SOURCES += \
     CurrentAccount.cpp \
     DepositAccount.cpp \
     InterestFreeAccount.cpp \
+    PersonalInfoPage.cpp \
     User.cpp \
     main.cpp \
     mainwindow.cpp
@@ -28,10 +29,12 @@ HEADERS += \
     InterestFreeAccount.h \
     LinkedList.h \
     Node.h \
+    PersonalInfoPage.h \
     User.h \
     mainwindow.h
 
 FORMS += \
+    PersonalInfoPage.ui \
     mainwindow.ui
 
 # Default rules for deployment.
