@@ -20,6 +20,7 @@ SOURCES += \
     CurrentAccount.cpp \
     DepositAccount.cpp \
     DetailedAccountInfoPage.cpp \
+    EditAdminInfoPage.cpp \
     InterestFreeAccount.cpp \
     PersonalInfoPage.cpp \
     RemoveAccountPage.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
     CurrentAccount.h \
     DepositAccount.h \
     DetailedAccountInfoPage.h \
+    EditAdminInfoPage.h \
     InterestFreeAccount.h \
     LinkedList.h \
     Node.h \
@@ -62,6 +64,7 @@ FORMS += \
     CostumersInfoPage.ui \
     CreateNewBankAccountPage.ui \
     DetailedAccountInfoPage.ui \
+    EditAdminInfoPage.ui \
     PersonalInfoPage.ui \
     RemoveAccountPage.ui \
     RemoveCostumerAccountPage.ui \
