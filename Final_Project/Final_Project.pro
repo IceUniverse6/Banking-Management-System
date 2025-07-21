@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     Account.cpp \
+    AccountInfoPage.cpp \
     AddNewAdminPage.cpp \
     AddNewCostumerPage.cpp \
     Admin.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
 
 HEADERS += \
     Account.h \
+    AccountInfoPage.h \
     AddNewAdminPage.h \
     AddNewCostumerPage.h \
     Admin.h \
@@ -48,6 +50,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    AccountInfoPage.ui \
     AddNewAdminPage.ui \
     AddNewCostumerPage.ui \
     CostumersInfoPage.ui \
