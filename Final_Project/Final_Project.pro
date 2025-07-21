@@ -16,6 +16,7 @@ SOURCES += \
 
 HEADERS += \
     Account.h \
+    Costumer.h \
     LinkedList.h \
     Node.h \
     User.h \
