@@ -16,6 +16,7 @@ SOURCES += \
     Admin.cpp \
     Costumer.cpp \
     CostumersInfoPage.cpp \
+    CreateNewBankAccountPage.cpp \
     CurrentAccount.cpp \
     DepositAccount.cpp \
     DetailedAccountInfoPage.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     Admin.h \
     Costumer.h \
     CostumersInfoPage.h \
+    CreateNewBankAccountPage.h \
     CurrentAccount.h \
     DepositAccount.h \
     DetailedAccountInfoPage.h \
@@ -54,6 +56,7 @@ FORMS += \
     AddNewAdminPage.ui \
     AddNewCostumerPage.ui \
     CostumersInfoPage.ui \
+    CreateNewBankAccountPage.ui \
     DetailedAccountInfoPage.ui \
     PersonalInfoPage.ui \
     ViewAllAccountsPage.ui \
