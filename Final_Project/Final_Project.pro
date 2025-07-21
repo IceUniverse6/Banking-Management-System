@@ -20,6 +20,7 @@ HEADERS += \
     Account.h \
     Admin.h \
     Costumer.h \
+    DepositAccount.h \
     LinkedList.h \
     Node.h \
     User.h \
