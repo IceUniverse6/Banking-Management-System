@@ -30,6 +30,7 @@ SOURCES += \
     RemoveAccountPage.cpp \
     RemoveCostumerAccountPage.cpp \
     User.cpp \
+    ViewAccountsForBalance.cpp \
     ViewAllAccountsPage.cpp \
     ViewAllAdminsPage.cpp \
     ViewAllCostumersPage.cpp \
@@ -60,6 +61,7 @@ HEADERS += \
     RemoveAccountPage.h \
     RemoveCostumerAccountPage.h \
     User.h \
+    ViewAccountsForBalance.h \
     ViewAllAccountsPage.h \
     ViewAllAdminsPage.h \
     ViewAllCostumersPage.h \
@@ -80,6 +82,7 @@ FORMS += \
     PersonalInfoPage.ui \
     RemoveAccountPage.ui \
     RemoveCostumerAccountPage.ui \
+    ViewAccountsForBalance.ui \
     ViewAllAccountsPage.ui \
     ViewAllAdminsPage.ui \
     ViewAllCostumersPage.ui \
