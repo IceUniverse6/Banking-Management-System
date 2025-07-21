@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddNewAdminPage</class>
+ <widget class="QDialog" name="AddNewAdminPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#AddNewAdminPage{
+background-color: #eaf2f8;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="lastNameField">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>220</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#lastNameField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #lastNameField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>360</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>نام کاربری</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nationalIdField">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>290</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#nationalIdField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #nationalIdField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstNameField">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>220</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#firstNameField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #firstNameField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordField">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>360</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#passwordField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #passwordField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ageField">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>290</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#ageField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #ageField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>290</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_5 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>سن</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createAccountButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>480</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> #createAccountButton {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #createAccountButton:hover {
+        background-color: #3498db;
+    }
+    #createAccountButton:pressed {
+        background-color: #1c5980;
+    }</string>
+   </property>
+   <property name="text">
+    <string>ساخت حساب</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>130</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_7 {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>افزودن ادمین جدید</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>360</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_6 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>رمز عبور</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>220</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_4 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>نام خانوادگی</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userNameField">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>360</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#userNameField {
+        border: 1px solid #2c3e50;
+        border-radius: 6px;
+        padding: 6px;
+        background-color: #ecf0f1;
+        font-size: 14px;
+	    color: rgb(0, 0, 0);
+ }
+ #userNameField:focus {
+        border: 1px solid #2980b9;
+        background-color: #ffffff;
+    }</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>220</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>نام</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>290</y>
+     <width>200</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2 {
+        color: #2c3e50;
+        font-size: 14px;
+        font-weight: bold;
+    }</string>
+   </property>
+   <property name="text">
+    <string>کد ملی</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
