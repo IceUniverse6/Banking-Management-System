@@ -14,6 +14,7 @@ SOURCES += \
     Costumer.cpp \
     CurrentAccount.cpp \
     DepositAccount.cpp \
+    DetailedAccountInfoPage.cpp \
     InterestFreeAccount.cpp \
     PersonalInfoPage.cpp \
     User.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     Costumer.h \
     CurrentAccount.h \
     DepositAccount.h \
+    DetailedAccountInfoPage.h \
     InterestFreeAccount.h \
     LinkedList.h \
     Node.h \
@@ -34,6 +36,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    DetailedAccountInfoPage.ui \
     PersonalInfoPage.ui \
     mainwindow.ui
 
