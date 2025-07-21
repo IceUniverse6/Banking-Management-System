@@ -22,6 +22,7 @@ SOURCES += \
     DetailedAccountInfoPage.cpp \
     EditAdminInfoPage.cpp \
     EditCostumerInfoPage.cpp \
+    FindCostumerPage.cpp \
     InterestFreeAccount.cpp \
     PersonalInfoPage.cpp \
     RemoveAccountPage.cpp \
@@ -47,6 +48,7 @@ HEADERS += \
     DetailedAccountInfoPage.h \
     EditAdminInfoPage.h \
     EditCostumerInfoPage.h \
+    FindCostumerPage.h \
     InterestFreeAccount.h \
     LinkedList.h \
     Node.h \
@@ -68,6 +70,7 @@ FORMS += \
     DetailedAccountInfoPage.ui \
     EditAdminInfoPage.ui \
     EditCostumerInfoPage.ui \
+    FindCostumerPage.ui \
     PersonalInfoPage.ui \
     RemoveAccountPage.ui \
     RemoveCostumerAccountPage.ui \
