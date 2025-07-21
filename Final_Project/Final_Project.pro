@@ -14,6 +14,7 @@ SOURCES += \
     Costumer.cpp \
     CurrentAccount.cpp \
     DepositAccount.cpp \
+    InterestFreeAccount.cpp \
     User.cpp \
     main.cpp \
     mainwindow.cpp
