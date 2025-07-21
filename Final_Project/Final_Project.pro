@@ -21,6 +21,7 @@ HEADERS += \
     Account.h \
     Admin.h \
     Costumer.h \
+    CurrentAccount.h \
     DepositAccount.h \
     LinkedList.h \
     Node.h \

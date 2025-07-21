@@ -1,0 +1,4 @@
+#ifndef CURRENTACCOUNT_H
+#define CURRENTACCOUNT_H
+
+#endif // CURRENTACCOUNT_H
